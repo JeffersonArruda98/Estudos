@@ -152,7 +152,6 @@ button {
 .receitas {
     display: flex;
     flex-direction: column;
-
     padding: 3rem 2rem;
     margin: auto;
 }
@@ -162,7 +161,7 @@ button {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 }
 
 .receitas-cabecalho {
