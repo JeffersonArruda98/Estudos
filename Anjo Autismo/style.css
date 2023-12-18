@@ -8,77 +8,116 @@
     box-sizing: border-box;
 }
 
+
+header {
+    background-color: #FF6B14;
+    
+}
+
 body {
-    background: #096b19;
-    color: #ffffff;
-}
-
-html {
-    font-family: 'Inter', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
-    max-width: 1120px;
-    margin: auto;
-    padding: 1.5rem, 10rem;
-    
+    margin: 0;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-ul {
-    list-style: none;
+.anjo {
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    width: 60px;
+    height: 60px;
 }
 
-
-
-
 .logo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    margin: 10px;
+    font-size: 36px;
     font-weight: 600;
-    text-transform: uppercase;
+    font-family: 'roboto';
+    padding: 10px;
+    color: #4D0084;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
-
-    gap: 1.5rem;
-    color: #fff2E7;
-}
-
-.insta {
-    color: #fff2E7;
     font-weight: 600;
+    
+    gap: 16px;
+    color: #ffffff;
+    
+    padding: 10px;
+    margin: 15px;
+    list-style: none;
 }
 
-.hero {
-    max-width: 1120px;
-    height: 60vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 6rem;
-
-    padding: 0rem 2rem;
+a {
     margin: auto;
-    overflow: clip;
-
+    padding: 10px;
+    text-decoration: none;
 }
 
-hr {
-    border-color: #32ac1a;
-    width: 238px;
+.principal {
+    margin: 15px;
+    padding: 15px; 
+    display: flex;
+    flex-direction: column;
 }
 
+
+
+
+
+
+
+
+
+
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #FF6B14;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 8px;
+}
+
+.instagram-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 115px;
+    background-color: #FF6B14;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-instagram {
+    margin-top: 8px;
+}
