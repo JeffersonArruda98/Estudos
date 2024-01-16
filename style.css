@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+
 
 * {
     margin: 0;
@@ -6,276 +8,126 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor1: #4D0084;
+    --cor2: #FF6B14;
+    --cor3: #ffffff;
+}
+
+header {
+    background-color: #4D0084;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
 body {
-    background: #1F1517;
-    color: #ffffff;
-}
-
-html {
-    font-family: 'Inter', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-ul {
-    list-style: none;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
-    max-width: 1120px;
-    margin: auto;
-    padding: 1.5rem, 10rem;
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow: 0px 2px 7px black;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+nav>a {
+    color: var(--cor1);
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav>a:hover {
+    background-color: #4d00849f;
+    color: var(--cor3);
+}
+
+.anjo {
     align-items: center;
+    margin: auto;
+    position: fixed;
+    width: 60px;
+    height: 60px;
 }
 
 .logo {
-    font-family: 'Teko';
-    font-size: 2rem;
+    margin: 10px;
+    font-size: 36px;
     font-weight: 600;
-    text-transform: uppercase;
+    font-family: 'roboto';
+    padding: 10px;
+    color: #4D0084;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    color: #fff2E7;
-}
+a {
+    margin: auto;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
 
-.github {
-    color: #fff2E7;
-    font-weight: 600;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
 }
 
 .principal {
-    background: #181012;
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 .hero {
-    max-width: 1120px;
-    height: 60vh;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 6rem;
-
-    padding: 0rem 2 rem;
-    margin: auto;
-    overflow: clip;
+    margin: 15px;
+    padding: 16px;
 
 }
 
-.hero-conteudo {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.descricao {
+    margin-top: 20px;
+    padding: 0px;
+    width: 400px;
 }
 
-.destaques {
-    font-family: 'Epilogue';
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #FF6B14;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
 }
 
-.marrom {
-    color: #a45a49;
+.fa-whatsapp {
+    margin-top: 8px;
 }
 
-.amarelo {
-    color: #e7a80e;
+.instagram-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 115px;
+    background-color: #FF6B14;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
 }
 
-h1 {
-    font-family: 'Montserrat';
-    font-size: 3.5rem;
-    font-weight: 800;
-
-}
-
-hr {
-    border-color: #a45a49;
-    width: 238px;
-}
-
-.hero-subtitulo {
-    color: #c7bab3;
-    font-family: 'Inter';
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.hero-imagens-container {
-    max-width: 55%;
-    column-count: 4;
-    column-gap: 1rem;
-    margin: -1rem;
-}
-
-.hero-imagens-container>figure>img {
-    width: 100%;
-    border-radius: 0.5rem;
-
-}
-
-.botao-container {
-    width: 100%;
-    max-width: 1120px;
-
-    margin: auto;
-    transform: translate("0, -50%");
-}
-
-button {
-    border: none;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    background-color: #a45a49;
-}
-
-.receitas {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 2rem;
-    margin: auto;
-}
-
-.alinhamento {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-.receitas-cabecalho {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.receitas-titulo {
-    font-family: 'Monteserrat';
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff2E7;
-}
-
-.receitas-subtitulo {
-    color: #C7BAB3;
-    font-family: 'Inter';
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-.box-card-container {
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.box-card {
-    background: #241a1c;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 29rem;
-    margin-top: 2rem;
-    gap: 2rem;
-
-}
-
-.box-card-cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.box-card-cabecalho-detalhes {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-
-}
-
-.box-titulo {
-    color: #FFF2E7;
-    font-family: 'Montserrat';
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.box-avaliacao {
-    color: #756A67;
-    font-family: 'Inter';
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.box-descricao {
-    color: #C7BAB3;
-    font-family: 'Inter';
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.box-autor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.box-autor>img {
-    border-radius: 20rem;
-    width: 1.5rem;
-}
-
-.box-autor-nome {
-    color: #C7BAB3;
-    font-family: 'Inter';
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-footer {
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    background: #23181a;
-}
-
-.footer-copy {
-    color: #fff2E7;
-    font-family: 'Inter';
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.footer-autorbox {
-    color: rgba(255, 242, 231, 0.50);
-    font-family: 'Inter';
-    font-size: 1rem;
-    font-weight: 500;
+.fa-instagram {
+    margin-top: 8px;
 }
